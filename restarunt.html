@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="C:\Users\thanu\OneDrive\Desktop\Food delivery\restarunt.css" /> <!-- Update this path if necessary -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Restaurant">Restaurant</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <h1 class="logo">Bite Box</h1>
+        </div>
+    </nav>
+
+    <section class="showcase-area" id="home">
+        <div class="showcase-container">
+            <p>Taste the Health in Every Bite!</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <h1 class="small">About Us</h1>
+                <p>
+                    At Healthy, we’re passionate about creating meals that are both delicious and nutritious.
+                    Our mission is simple: to provide you with healthy food that delights your taste buds and nourishes your body.
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="https://media.istockphoto.com/id/1316145932/photo/table-top-view-of-spicy-food.jpg?b=1&s=612x612&w=0&k=20&c=X6CkFGpSKhNZeiii8Pp2M_YrBdqs7tRaBytkGi48a0U=" alt="food" />
+            </div>
+        </div>
+    </section>
+
+    <section id="Restaurant">
+        <h2>Restaurant</h2>
+        <div class="restaurants-container">
+            <div class="Restaurant" onclick="openModal('marinaa-menu')">
+                <div class="img-container">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipOWqamzVp9QkSG7oxalP4RBDeE20XQgOVQ0pPda=s680-w680-h510" alt="Marinaa"/>
+                    <div class="img-content">
+                        <h3>Marinaa</h3>
+                    </div>
+                </div>
+                <div class="menu" id="marinaa-menu" style="display:none;">
+                    <h3>Menu Items:</h3>
+                    <div class="menu-item">
+                        <input type="checkbox" id="marinaa-pasta">
+                        <label for="marinaa-pasta">Pasta<br>Rs.200</label>
+                    </div>
+                    <div class="menu-item">
+                        <input type="checkbox" id="marinaa-pizza">
+                        <label for="marinaa-pizza">Pizza<br>Rs.300</label>
+                    </div>
+                    <div class="menu-item">
+                        <input type="checkbox" id="marinaa-salad">
+                        <label for="marinaa-salad">Caesar Salad<br>Rs.150</label>
+                    </div>
+                    <div class="menu-item">
+                        <input type="checkbox" id="marinaa-soup">
+                        <label for="marinaa-soup">Tomato Soup<br>Rs.100</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Restaurant" onclick="openModal('onefine-menu')">
+                <div class="img-container">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipPL-Cr_xsvyNsRIC-VmMQBHuRtnzLbZqCp7Hf4d=s680-w680-h510" alt="One Fine Day"/>
+                    <div class="img-content">
+                        <h3>One Fine Day</h3>
+                    </div>
+                </div>
+                <div class="menu" id="onefine-menu" style="display:none;">
+                    <h3>Menu Items:</h3>
+                    <div class="menu-item">
+                        <input type="checkbox" id="onefine-burger">
+                        <label for="onefine-burger">Burger<br>Rs.150</label>
+                    </div>
+                    <div class="menu-item">
+                        <input type="checkbox" id="onefine-salad">
+                        <label for="onefine-salad">Salad<br>Rs.100</label>
+                    </div>
+                    <div class="menu-item">
+                        <input type="checkbox" id="onefine-fries">
+                        <label for="onefine-fries">French Fries<br>Rs.80</label>
+                    </div>
+                    <div class="menu-item">
+                        <input type="checkbox" id="onefine-drink">
+                        <label for="onefine-drink">Soft Drink<br>Rs.50</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Restaurant" onclick="openModal('midstreet-menu')">
+                <div class="img-container">
+                    <img src="https://content.jdmagicbox.com/comp/erode/d6/9999px424.x424.181112130333.w1d6/catalogue/mid-street-erode-ngzomeua7g.jpg" alt="Midstreet"/>
+                    <div class="img-content">
+                        <h3>Midstreet</h3>
+                    </div>
+                </div>
+                <div class="menu" id="midstreet-menu" style="display:none;">
+                    <h3>Menu Items:</h3>
+                    <div class="menu-item">
+                        <input type="checkbox" id="midstreet-fries">
+                        <label for="midstreet-fries">Fries<br>Rs.80</label>
+                    </div>
+                    <div class="menu-item">
+                        <input type="checkbox" id="midstreet-sandwich">
+                        <label for="midstreet-sandwich">Sandwich<br>Rs.120</label>
+                    </div>
+                    <div class="menu-item">
+                        <input type="checkbox" id="midstreet-pasta">
+                        <label for="midstreet-pasta">Pasta<br>Rs.200</label>
+                    </div>
+                    <div class="menu-item">
+                        <input type="checkbox" id="midstreet-smoothie">
+                        <label for="midstreet-smoothie">Fruit Smoothie<br>Rs.150</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Restaurant" onclick="openModal('barbequeen-menu')">
+                <div class="img-container">
+                    <img src="https://content.jdmagicbox.com/comp/salem/i4/0427px427.x427.110607141544.b1i4/catalogue/barbequeen-restaurant-five-road-salem-home-delivery-restaurants-f7cdsrgfku.jpg" alt="Barbequeen"/>
+                    <div class="img-content">
+                        <h3>Barbequeen</h3>
+                    </div>
+                </div>
+                <div class="menu" id="barbequeen-menu" style="display:none;">
+                    <h3>Menu Items:</h3>
+                    <div class="menu-item">
+                        <input type="checkbox" id="barbequeen-grilledChicken">
+                        <label for="barbequeen-grilledChicken">Grilled Chicken<br>Rs.350</label>
+                    </div>
+                    <div class="menu-item">
+                        <input type="checkbox" id="barbequeen-biryani">
+                        <label for="barbequeen-biryani">Biryani<br>Rs.300</label>
+                    </div>
+                    <div class="menu-item">
+                        <input type="checkbox" id="barbequeen-vegCurry">
+                        <label for="barbequeen-vegCurry">Vegetable Curry<br>Rs.250</label>
+                    </div>
+                    <div class="menu-item">
+                        <input type="checkbox" id="barbequeen-dessert">
+                        <label for="barbequeen-dessert">Chocolate Cake<br>Rs.200</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container container">
+            <div class="contact-img">
+                <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg" alt="" />
+            </div>
+            <div class="form-container">
+                <h2>Contact Us</h2>
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="E-Mail" />
+                <textarea cols="30" rows="6" placeholder="Type Your Message"></textarea>
+                <a href="#" class="btn btn-primary">Submit</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <h2>BiteBox &copy; all rights reserved</h2>
+    </footer>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content" id="modalContent"></div>
+    </div>
+
+    <script>
+        function openModal(restaurantMenuId) {
+            const modalContent = document.getElementById("modalContent");
+            const menu = document.getElementById(restaurantMenuId);
+            modalContent.innerHTML = menu.innerHTML + '<button class="order-button" onclick="placeOrder()">Order</button>';
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        function placeOrder() {
+            const checkboxes = document.querySelectorAll("#modalContent input[type='checkbox']");
+            let orderItems = [];
+
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    orderItems.push(checkbox.nextElementSibling.innerText);
+                }
+            });
+
+            if (orderItems.length > 0) {
+                localStorage.setItem('orderItems', JSON.stringify(orderItems));
+                // Use relative path for payment page
+                window.location.href = 'payment.html'; // Update this path as needed
+            } else {
+                alert("Please select at least one item to order.");
+            }
+        }
+
+        window.onclick = function(event) {
+            var modal = document.getElementById("myModal");
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
